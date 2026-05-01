@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 技術實踐與產業轉型提案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; }
+        .section-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .section-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <header class="bg-indigo-700 text-white py-12 shadow-lg">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">AI 技術實踐與跨領域應用大綱</h1>
+            <p class="text-indigo-100 text-lg">從本地端模型架設、開發實作到傳統產業的數位轉型</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <section class="section-card bg-white p-8 rounded-xl shadow-sm border-t-4 border-indigo-500">
+                <div class="flex items-center mb-4">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-full mr-3 text-sm">一</span>
+                    <h2 class="text-xl font-bold text-indigo-900">技術實踐與本地端 AI 探索</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li>
+                        <h3 class="font-semibold text-gray-700">● 本地端大型語言模型 (Local LLMs) 探討</h3>
+                        <p class="text-gray-500 text-sm mt-1">重點：隱私安全、運算成本效益分析、離線環境應用場景。</p>
+                    </li>
+                    <li>
+                        <h3 class="font-semibold text-gray-700">● LM Studio / Ollama 部署實務</h3>
+                        <p class="text-gray-500 text-sm mt-1">重點：GGUF 模型量化選擇、硬體資源分配 (VRAM/RAM)、API 整合心得。</p>
+                    </li>
+                </ul>
+                <div class="mt-6 text-right text-indigo-500 font-medium">權重：40%</div>
+            </section>
+
+            <section class="section-card bg-white p-8 rounded-xl shadow-sm border-t-4 border-emerald-500">
+                <div class="flex items-center mb-4">
+                    <span class="bg-emerald-100 text-emerald-700 font-bold px-3 py-1 rounded-full mr-3 text-sm">二</span>
+                    <h2 class="text-xl font-bold text-emerald-900">生成式 AI 輔助開發</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li>
+                        <h3 class="font-semibold text-gray-700">● AI 結對編程 (Pair Programming)</h3>
+                        <p class="text-gray-500 text-sm mt-1">重點：HTML/CSS/JS 代碼生成效率、Debug 邏輯優化、提示詞技巧。</p>
+                    </li>
+                    <li>
+                        <h3 class="font-semibold text-gray-700">● 個人作品集網站建置</h3>
+                        <p class="text-gray-500 text-sm mt-1">重點：利用 AI 進行 Sitemap 規劃、快速切版元件生成、自動化內容填充。</p>
+                    </li>
+                </ul>
+                <div class="mt-6 text-right text-emerald-500 font-medium">權重：40%</div>
+            </section>
+
+            <section class="section-card bg-white p-8 rounded-xl shadow-sm border-t-4 border-amber-500">
+                <div class="flex items-center mb-4">
+                    <span class="bg-amber-100 text-amber-700 font-bold px-3 py-1 rounded-full mr-3 text-sm">三</span>
+                    <h2 class="text-xl font-bold text-amber-900">跨領域創新與轉型</h2>
+                </div>
+                <ul class="space-y-4">
+                    <li>
+                        <h3 class="font-semibold text-gray-700">● 傳統交通器材產業數位轉型</h3>
+                        <p class="text-gray-500 text-sm mt-1">重點：零件資料庫的 RAG 檢索應用、智慧客服自動回覆技術規格、線上維修指引數位化。</p>
+                    </li>
+                </ul>
+                <div class="mt-12 text-right text-amber-500 font-medium">權重：20%</div>
+            </section>
+
+        </div>
+
+        <div class="mt-16 bg-gray-800 text-white p-8 rounded-2xl text-center">
+            <h2 class="text-2xl font-bold mb-4">實作建議方向</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                建議優先完成本地端 AI 環境架設，並以此作為基礎，開發輔助交通器材查詢的專屬 AI 助手，最後將成果整合進個人作品集網站中。
+            </p>
+        </div>
+    </main>
+
+    <footer class="text-center py-8 text-gray-400 text-sm">
+        &copy; 2026 AI Project Outline | 技術實踐與本地端應用
+    </footer>
+
+</body>
+</html>
