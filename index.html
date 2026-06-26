@@ -7,12 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --gold: #D4AF37;
-            --gold-dark: #B8860B;
-            --gold-light: #F4EBD0;
-            --off-white: #FCFAFA;
-        }
+       :root{
+    --primary:#123A63;
+    --gold:#C8A64D;
+    --gold-light:#E7D8A6;
+    --bg:#F8F9FB;
+    --text:#2C2C2C;
+}
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--off-white);
@@ -74,22 +75,29 @@
 <body class="overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gold/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-2xl serif font-bold tracking-widest text-gold">CATHERINE</span>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
-                <a href="#about" class="hover:text-gold transition-colors">About</a>
-                <a href="#expertise" class="hover:text-gold transition-colors">Expertise</a>
-                <a href="#skills" class="hover:text-gold transition-colors">Skills</a>
-                <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
-            </div>
-            <button class="md:hidden text-gold" onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
-        </div>
-    </nav>
+    nav{
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(200,166,77,.15);
+}
+
+nav a{
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0%;
+    height:2px;
+    background:var(--gold);
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center space-y-8 hidden">
